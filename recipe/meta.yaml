@@ -1,13 +1,13 @@
 {% set name = "libhdbpp" %}
-{% set version = "2.0.0" %}
+{% set version = "2.1.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://gitlab.com/tango-controls/hdbpp/libhdbpp/-/archive/v{{ version }}/libhdbpp-v{{ version }}.tar.gz
-  sha256: 53e1647d0106787adaed5d9e82c3eb53c5d5b1a4892387b1e52a183fadde4b93
+  url: https://gitlab.com/tango-controls/hdbpp/libhdbpp/-/archive/{{ version }}/libhdbpp-{{ version }}.tar.gz
+  sha256: 250ac1c03086e1da6e1bd6b6bf4184cba288d99c0ef5bd5ee47b9ca5ceab609f
 
 build:
   number: 0
@@ -29,13 +29,14 @@ requirements:
     - cppzmq
     - cpptango
     - omniorb
+    - omniorb-libs
 
 test:
   commands:
     - test -f ${PREFIX}/lib/libhdb++${SHLIB_EXT}
     - test -f ${PREFIX}/lib/libhdb++${SHLIB_EXT}.${PKG_VERSION}
-    - test -f ${PREFIX}/include/hdb++/HdbClient.h
     - test -f ${PREFIX}/include/hdb++/AbstractDB.h
+    - test -f ${PREFIX}/lib/cmake/libhdbpp/libhdbppConfig.cmake
 
 about:
   home: https://www.tango-controls.org
