@@ -1,5 +1,5 @@
 {% set name = "libhdbpp" %}
-{% set version = "2.1.0" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://gitlab.com/tango-controls/hdbpp/libhdbpp/-/archive/{{ version }}/libhdbpp-{{ version }}.tar.gz
-  sha256: 250ac1c03086e1da6e1bd6b6bf4184cba288d99c0ef5bd5ee47b9ca5ceab609f
+  sha256: a7465e04dfb556f910741cd95ec5126ee86dc27d7b17437130974394044c3b1a
 
 build:
   number: 0
