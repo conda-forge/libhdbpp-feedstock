@@ -1,3 +1,3 @@
-# Pin cpptango to 9.3 for now
 cpptango:
-  - 9.3
+  - 9.3    # [linux]
+  - 9.4
