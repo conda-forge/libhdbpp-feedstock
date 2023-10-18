@@ -1,11 +1,11 @@
-About libhdbpp
-==============
+About libhdbpp-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libhdbpp-feedstock/blob/main/LICENSE.txt)
 
 Home: https://www.tango-controls.org
 
 Package license: LGPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libhdbpp-feedstock/blob/main/LICENSE.txt)
 
 Summary: Interface library for HDB++ archiving system.
 
@@ -39,7 +39,7 @@ Current build status
               <td>linux_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=16626&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libhdbpp-feedstock?branchName=main&jobName=linux&configuration=linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/libhdbpp-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_" alt="variant">
                 </a>
               </td>
             </tr>
