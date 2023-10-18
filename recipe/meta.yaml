@@ -11,7 +11,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [not linux]
+  skip: true  # [win]
   # Library doesn't link against cpptango (only headers used)
   ignore_run_exports:
     - cpptango
@@ -28,13 +28,13 @@ requirements:
   host:
     - cppzmq
     - cpptango
-    - omniorb
     - omniorb-libs
 
 test:
   commands:
     - test -f ${PREFIX}/lib/libhdb++${SHLIB_EXT}
-    - test -f ${PREFIX}/lib/libhdb++${SHLIB_EXT}.${PKG_VERSION}
+    - test -f ${PREFIX}/lib/libhdb++${SHLIB_EXT}.${PKG_VERSION}  # [linux]
+    - test -f ${PREFIX}/lib/libhdb++.${PKG_VERSION}.dylib        # [osx]
     - test -f ${PREFIX}/include/hdb++/AbstractDB.h
     - test -f ${PREFIX}/lib/cmake/libhdbpp/libhdbppConfig.cmake
 
