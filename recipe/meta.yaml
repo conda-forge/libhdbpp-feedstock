@@ -25,7 +25,7 @@ requirements:
     - cmake
     - make
     - {{ compiler('cxx') }}
-    - libtool
+    - {{ stdlib('c') }}
     - pkg-config
   host:
     - cppzmq
