@@ -17,4 +17,4 @@ docker_image:
 omniorb_libs:
 - '4.2'
 target_platform:
-- linux-64
+- linux-aarch64
