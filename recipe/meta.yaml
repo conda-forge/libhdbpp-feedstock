@@ -8,6 +8,8 @@ package:
 source:
   url: https://gitlab.com/tango-controls/hdbpp/libhdbpp/-/archive/{{ version }}/libhdbpp-{{ version }}.tar.gz
   sha256: 0b43f8ca9c57a8aff23fcdf6b8180f266b8968daf7fbd12bbeb1f45e27d4f82c
+  patches:
+    - find-tango.patch
 
 build:
   number: 1
