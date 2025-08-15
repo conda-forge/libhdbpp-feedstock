@@ -3,7 +3,7 @@ About libhdbpp-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libhdbpp-feedstock/blob/main/LICENSE.txt)
 
-Home: https://www.tango-controls.org
+Home: https://www.tango-controls.org/
 
 Package license: LGPL-3.0-or-later
 
@@ -16,7 +16,6 @@ Documentation: https://tango-controls.readthedocs.io/en/latest/tools-and-extensi
 HDB++ is an archiving system for Tango-Controls.
 libhdbpp provides an abstract means to archive data events to a Cassandra database,
 MySQL database, or potentially other database backends.
-
 
 Current build status
 ====================
