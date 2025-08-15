@@ -15,7 +15,6 @@ source:
     - find-tango.patch
 
 build:
-  # Library doesn't link against cpptango (only headers used)
   number: 2
   skip: win
 
@@ -32,19 +31,19 @@ requirements:
     - omniorb-libs
   run_exports:
     - ${{ pin_subpackage('libhdbpp', upper_bound='x.x') }}
+  # Library doesn't link against cpptango (only headers used)
   ignore_run_exports:
-    by_name:
+    from_package:
       - cpptango
 
 tests:
-  - script:
-      - test -f ${PREFIX}/lib/libhdb++${SHLIB_EXT}
-      - if: linux
-        then: test -f ${PREFIX}/lib/libhdb++${SHLIB_EXT}.${PKG_VERSION}
-      - if: osx
-        then: test -f ${PREFIX}/lib/libhdb++.${PKG_VERSION}.dylib
-      - test -f ${PREFIX}/include/hdb++/AbstractDB.h
-      - test -f ${PREFIX}/lib/cmake/libhdbpp/libhdbppConfig.cmake
+  - package_contents:
+      files:
+        - lib/cmake/libhdbpp/libhdbppConfig.cmake
+      lib:
+        - hdb++
+      include:
+        - hdb++/AbstractDB.h
 
 about:
   license: LGPL-3.0-or-later
@@ -56,7 +55,7 @@ about:
     MySQL database, or potentially other database backends.
   homepage: https://www.tango-controls.org
   repository: https://gitlab.com/tango-controls/hdbpp/libhdbpp
-  documentation: https://tango-controls.readthedocs.io/en/latest/tools-and-extensions/archiving/HDB++.html
+  documentation: https://tango-controls.readthedocs.io/en/latest/Explanation/archiving/hdbpp.html
 
 extra:
   recipe-maintainers:
