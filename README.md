@@ -11,7 +11,7 @@ Summary: Interface library for HDB++ archiving system.
 
 Development: https://gitlab.com/tango-controls/hdbpp/libhdbpp
 
-Documentation: https://tango-controls.readthedocs.io/en/latest/tools-and-extensions/archiving/HDB++.html
+Documentation: https://tango-controls.readthedocs.io/en/latest/Explanation/archiving/hdbpp.html
 
 HDB++ is an archiving system for Tango-Controls.
 libhdbpp provides an abstract means to archive data events to a Cassandra database,
