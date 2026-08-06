@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: 2.2.0
+  version: "2.2.1"
 
 recipe:
   name: libhdbpp-split
@@ -9,12 +9,10 @@ recipe:
 
 source:
   url: https://gitlab.com/tango-controls/hdbpp/libhdbpp/-/archive/${{ version }}/libhdbpp-${{ version }}.tar.gz
-  sha256: 0b43f8ca9c57a8aff23fcdf6b8180f266b8968daf7fbd12bbeb1f45e27d4f82c
-  patches:
-    - find-tango.patch
+  sha256: 98dac5d6fe2c76473347867671d6c0801407ee5c3c2f71519b8229476afa4799
 
 build:
-  number: 3
+  number: 0
   skip: win
 
 outputs:
@@ -101,7 +99,7 @@ outputs:
 
 about:
   license: LGPL-3.0-or-later
-  license_file: LICENSE
+  license_file: COPYING.LESSER
   summary: Interface library for HDB++ archiving system.
   description: |
     HDB++ is an archiving system for Tango-Controls.
