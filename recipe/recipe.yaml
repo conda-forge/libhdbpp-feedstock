@@ -99,7 +99,7 @@ outputs:
 
 about:
   license: LGPL-3.0-or-later
-  license_file: LICENSE
+  license_file: COPYING.LESSER
   summary: Interface library for HDB++ archiving system.
   description: |
     HDB++ is an archiving system for Tango-Controls.
