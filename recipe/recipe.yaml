@@ -10,8 +10,6 @@ recipe:
 source:
   url: https://gitlab.com/tango-controls/hdbpp/libhdbpp/-/archive/${{ version }}/libhdbpp-${{ version }}.tar.gz
   sha256: 98dac5d6fe2c76473347867671d6c0801407ee5c3c2f71519b8229476afa4799
-  patches:
-    - find-tango.patch
 
 build:
   number: 0
